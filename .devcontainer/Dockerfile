@@ -50,7 +50,11 @@ RUN mkdir -p /home/$USERNAME/.vscode-server/extensions \
     /home/$USERNAME/.vscode-server \
     /home/$USERNAME/.vscode-server-insiders
 
-# Set user
+# install user packages
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+    # Set user
 USER ${USERNAME}
 RUN echo 'export PS1="🥝  \[\033[1;36m\]'"${IMG_NAME}"' \[\e[33m\]\W\[\e[m\] \[\033[1;36m\]# \[\033[0m\]"' >> ~/.bashrc
 

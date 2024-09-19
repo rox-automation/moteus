@@ -1,0 +1,7 @@
+invoke
+ipython
+mkdocs-material
+mypy
+pylint
+pytest
+ruff

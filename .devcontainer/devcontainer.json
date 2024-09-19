@@ -9,6 +9,7 @@
         "USER_GID": "${localEnv:USER_GID}"
       }
     },
+    "runArgs": ["--privileged"],
 
     "mounts": [
       "source=/var/tmp/container-extensions,target=/home/dev/.vscode-server/extensions,type=bind,consistency=cached"
