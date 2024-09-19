@@ -38,8 +38,8 @@ Assembled and tested boards can be purchased at: https://mjbots.com
 
 # Documentation #
 
-* [Getting Started](docs/getting_started.md)
-* [Reference](docs/reference.md)
+* [Getting Started](getting_started/)
+* [Reference](reference/)
 * [Discord](https://discord.gg/W4hUpBb)
 
 # Misc #

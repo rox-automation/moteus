@@ -1,0 +1,62 @@
+site_name: Moteus documentation
+site_url: https://rox-automation.github.io/moteus
+site_dir: public
+
+# Repository
+repo_name: moteus
+repo_url: https://github.com/rox-automation/moteus
+edit_uri: edit/main/docs
+
+use_directory_urls: true
+
+theme:
+  name: material
+  # logo: img/aigro_logo.png
+  features:
+    - content.action.edit
+
+  palette:
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+# extra_css:
+#   - stylesheets/extra.css
+plugins:
+  - search
+  # - glightbox
+  - mkdocstrings:
+      handlers:
+        python:
+          rendering:
+            show_signature_annotations: true
+            show_source: true
+            show_submodules: true
+            heading_level: 2
+
+markdown_extensions:
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # navigation
+
+
+nav:
+  - index.md
+  - getting_started.md
+  - reference.md
+  - raspberry_pi.md

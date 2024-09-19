@@ -1,6 +1,13 @@
 invoke
 ipython
+mkdocs
+mkdocs-glightbox
+mkdocs-jupyter
+mkdocs-macros-plugin
 mkdocs-material
+mkdocs-mermaid2-plugin
+mkdocstrings
+mkdocstrings-python
 mypy
 pylint
 pytest
